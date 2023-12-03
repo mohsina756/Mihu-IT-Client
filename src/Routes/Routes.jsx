@@ -126,7 +126,7 @@ export const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `http://localhost:5000/dashboard/details/${params?.id}`
+            `https://mihu-server.vercel.app/dashboard/details/${params?.id}`
           ),
       },
     ],

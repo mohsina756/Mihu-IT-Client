@@ -1,7 +1,6 @@
 import useAxiosOpen from "../../Hooks/useAxiosOpen";
 import { FaCheck, FaTimes } from "react-icons/fa";
 import Modal from "react-modal";
-import { CardElement } from "@stripe/react-stripe-js";
 import {  useState } from "react";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
@@ -175,22 +174,7 @@ const Table = ({ header, body, refetch }) => {
               name="time"
             />
             <div className="py-10">
-              <CardElement
-                options={{
-                  style: {
-                    base: {
-                      fontSize: "16px",
-                      color: "#424770",
-                      "::placeholder": {
-                        color: "#eab308",
-                      },
-                    },
-                    invalid: {
-                      color: "#9e2146",
-                    },
-                  },
-                }}
-              />
+              
             </div>
             <div className="flex gap-10 justify-center">
               <input
